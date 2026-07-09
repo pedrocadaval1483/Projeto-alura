@@ -1,19 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8 ">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo Oculto | Teorias e Mistérios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-<main>
-<h2>Meu Primeiro post</h2>
-<p>Por: Pedro Cadaval</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-</main>
-</header>
+
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="logo">ARQUIVO <span>OCULTO</span></h1>
+            <nav class="nav-menu">
+                <a href="#home">Início</a>
+                <a href="#teorias">Teorias</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+            <button id="theme-toggle" class="btn-toggle" aria-label="Alternar tema">👁️ Alternar Tema</button>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>A VERDADE ESTÁ LOGO ABAIXO</h2>
+            <p>Explore os mistérios que o mundo tenta esconder. Questione a realidade.</p>
+            <a href="#teorias" class="btn-hero">Investigar Agora</a>
+        </div>
+    </section>
+
+    <section id="teorias" class="feed-section">
+        <div class="section-container">
+            <h2 class="section-title">Arquivos Confidenciais</h2>
+            
+            <div class="filter-container">
+                <button class="btn-filter active" data-filter="all">Todos</button>
+                <button class="btn-filter" data-filter="espaco">Espaço</button>
+                <button class="btn-filter" data-filter="historia">História</button>
+                <button class="btn-filter" data-filter="tecnologia">Tecnologia</button>
+            </div>
+
+            <div class="posts-grid">
+                
+                <article class="post-card" data-category="espaco">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=600&q=80" alt="OVNI no espaço">
+                        <span class="card-tag">Espaço</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-date">08 de Julho, 2026</span>
+                        <h3>O Incidente de Roswell</h3>
+                        <p>O que realmente caiu no deserto do Novo México em 1947? Destroços de um balão meteorológico ou tecnologia extraterrestre?</p>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="historia">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80" alt="Relógio antigo distorcido">
+                        <span class="card-tag">História</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-date">05 de Julho, 2026</span>
+                        <h3>O Efeito Mandela</h3>
+                        <p>Memórias falsas coletivas ou evidências reais de que nossa realidade está colidindo com universos paralelos?</p>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="tecnologia">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Código binário verde">
+                        <span class="card-tag">Tecnologia</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-date">01 de Julho, 2026</span>
+                        <h3>A Teoria da Simulação</h3>
+                        <p>Grandes físicos e tecnólogos alertam: as chances de estarmos vivendo na "realidade base" podem ser de uma em bilhões.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <div class="about-container">
+            <h2>Sobre o Arquivo Oculto</h2>
+            <p>Este blog é um espaço dedicado ao debate de mistérios, enigmas modernos e teorias da conspiração. Nosso objetivo é instigar a curiosidade e o pensamento crítico de forma saudável. Todo o conteúdo publicado aqui possui caráter de entretenimento e ficção especulativa.</p>
+            <p class="warning-text">// CUIDADO COM O QUE VOCÊ ACREDITA //</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Arquivo Oculto. Conexão Segura e Criptografada.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
